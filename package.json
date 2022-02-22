@@ -1,0 +1,32 @@
+{
+  "name": "architecturesandbox",
+  "version": "0.0.1",
+  "description": "Examples of MVC, MVP, and FLUX architecture for Yandex Practicum",
+  "main": "index.js",
+  "scripts": {
+    "mvc": "parcel ./mvc/src/index.html --target default --dist-dir ./mvc/build",
+    "flux": "parcel ./flux/src/index.html --target default --dist-dir ./flux/build"
+  },
+  "author": "Nikolay Eliseev",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.3.1"
+  },
+  "engines": {
+    "node": ">12"
+  },
+  "targets": {
+    "default": {
+      "sourceMap": true,
+      "includeNodeModules": [
+        "handlebars",
+        "uuid"
+      ],
+      "context": "browser"
+    }
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "uuid": "^8.3.2"
+  }
+}
